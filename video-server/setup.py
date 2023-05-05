@@ -18,6 +18,7 @@ dev_requirements = (
     'flake8-docstrings',
     'pep8',
     'pyflakes',
+    'moviepy',
     'pydocstyle',
     'pytest==4.4.1',
     'pytest-cov==2.7.1',
