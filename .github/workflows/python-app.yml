@@ -97,14 +97,14 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          if [ -d "Editing-and-storing-video-service" ]; then
-            cd Editing-and-storing-video-service
-            git pull https://github.com/giangnam34/Editing-and-storing-video-service.git && \echo "Pull completed"
+          if [ -d "video-service" ]; then
+            cd video-service
+            git pull https://github.com/nigrumdiaster/video-service.git && \echo "Pull completed"
             cd ../
           else
-            git clone https://github.com/giangnam34/Editing-and-storing-video-service.git && \echo "Clone completed"
+            git clone https://github.com/nigrumdiaster/video-service.git && \echo "Clone completed"
           fi
-          cd Editing-and-storing-video-service/
+          cd video-service/
           sudo apt-get update
           sudo apt-get install -y docker.io
           sudo systemctl start docker
