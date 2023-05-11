@@ -28,7 +28,7 @@ services:
       - RABBIT_MQ_URL=pyamqp://guest@rabbit//
       - MONGO_HOST=mongodb
     volumes:
-      - server_data:/data/db:rw
+      - D:\video-server\video-server\src\videoserver\media\projects:/opt/media
 volumes:
   mongodb_data: {}
   server_data: {}
